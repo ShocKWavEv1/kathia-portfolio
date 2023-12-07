@@ -1,0 +1,175 @@
+{
+  "color": {
+    "primary.900": {
+      "value": "#093732"
+    },
+    "primary.800": {
+      "value": "#0F4238"
+    },
+    "primary.700": {
+      "value": "#185240"
+    },
+    "primary.600": {
+      "value": "#236248"
+    },
+    "primary.500": {
+      "value": "#307351"
+    },
+    "primary.400": {
+      "value": "#60AB7D"
+    },
+    "primary.300": {
+      "value": "#8AD5A0"
+    },
+    "primary.200": {
+      "value": "#B8F0C3"
+    },
+    "primary.100": {
+      "value": "#DBF8DD"
+    },
+
+    "secondary.900": {
+      "value": "#72203C"
+    },
+    "secondary.800": {
+      "value": "#8A354B"
+    },
+    "secondary.700": {
+      "value": "#AC5463"
+    },
+    "secondary.600": {
+      "value": "#CD7A81"
+    },
+    "secondary.500": {
+      "value": "#EFA7A7"
+    },
+    "secondary.400": {
+      "value": "#F5C2BD"
+    },
+    "secondary.300": {
+      "value": "#FAD4CC"
+    },
+    "secondary.200": {
+      "value": "#FDE6DE"
+    },
+    "secondary.100": {
+      "value": "#FEF4EE"
+    },
+
+    "marian.900": {
+      "value": "#0B0C48"
+    },
+    "marian.800": {
+      "value": "#121457"
+    },
+    "marian.700": {
+      "value": "#1D1F6C"
+    },
+    "marian.600": {
+      "value": "#2A2D81"
+    },
+    "marian.500": {
+      "value": "#3A3E96"
+    },
+    "marian.400": {
+      "value": "#676BC0"
+    },
+    "marian.300": {
+      "value": "#8D91DF"
+    },
+    "marian.200": {
+      "value": "#B8BBF4"
+    },
+    "marian.100": {
+      "value": "#DBDDF9"
+    },
+
+    "noir.900": {
+      "value": "#270F08"
+    },
+    "noir.800": {
+      "value": "#30170E"
+    },
+    "noir.700": {
+      "value": "#3B2316"
+    },
+    "noir.600": {
+      "value": "#473020"
+    },
+    "noir.500": {
+      "value": "#533E2D"
+    },
+    "noir.400": {
+      "value": "#977D63"
+    },
+    "noir.300": {
+      "value": "#CBB293"
+    },
+    "noir.200": {
+      "value": "#EDDCC2"
+    },
+    "noir.100": {
+      "value": "#F6EEDF"
+    },
+
+    "licorice.900": {
+      "value": "#10040C"
+    },
+    "licorice.800": {
+      "value": "#14080E"
+    },
+    "licorice.700": {
+      "value": "#190D12"
+    },
+    "licorice.600": {
+      "value": "#1E1316"
+    },
+    "licorice.500": {
+      "value": "#231A1C"
+    },
+    "licorice.400": {
+      "value": "#7B6366"
+    },
+    "licorice.300": {
+      "value": "#BD9FA0"
+    },
+    "licorice.200": {
+      "value": "#E9D2D1"
+    },
+    "licorice.100": {
+      "value": "#F4E9E7"
+    },
+
+    "alabaster.900": {
+      "value": "#6C5A28"
+    },
+    "alabaster.800": {
+      "value": "#837342"
+    },
+    "alabaster.700": {
+      "value": "#A29569"
+    },
+    "alabaster.600": {
+      "value": "#C2B999"
+    },
+    "alabaster.500": {
+      "value": "#E2DFD2"
+    },
+    "alabaster.400": {
+      "value": "#EDEBE0"
+    },
+    "alabaster.300": {
+      "value": "#F6F4EB"
+    },
+    "alabaster.200": {
+      "value": "#FCFBF4"
+    },
+    "alabaster.100": {
+      "value": "#FDFDF9"
+    },
+
+    "lenis": {
+      "value": "#ff98a2"
+    }
+  }
+}

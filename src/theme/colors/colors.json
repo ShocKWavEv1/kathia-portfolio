@@ -1,31 +1,31 @@
 {
   "color": {
     "primary.900": {
-      "value": "#093732"
+      "value": "#052E03"
     },
     "primary.800": {
-      "value": "#0F4238"
+      "value": "#0A3805"
     },
     "primary.700": {
-      "value": "#185240"
+      "value": "#134509"
     },
     "primary.600": {
-      "value": "#236248"
+      "value": "#1D530D"
     },
     "primary.500": {
-      "value": "#307351"
+      "value": "#2a6112"
     },
     "primary.400": {
-      "value": "#60AB7D"
+      "value": "#62A03E"
     },
     "primary.300": {
-      "value": "#8AD5A0"
+      "value": "#96CF6A"
     },
     "primary.200": {
-      "value": "#B8F0C3"
+      "value": "#C8EFA1"
     },
     "primary.100": {
-      "value": "#DBF8DD"
+      "value": "#E5F7CE"
     },
 
     "secondary.900": {
@@ -166,6 +166,34 @@
     },
     "alabaster.100": {
       "value": "#FDFDF9"
+    },
+
+    "isabellina.900": {
+      "value": "#73522D"
+    },
+    "isabellina.800": {
+      "value": "#8B6F4B"
+    },
+    "isabellina.700": {
+      "value": "#AC9777"
+    },
+    "isabellina.600": {
+      "value": "#CEC2AD"
+    },
+    "isabellina.500": {
+      "value": "#F0EFED"
+    },
+    "isabellina.400": {
+      "value": "#F6F5F3"
+    },
+    "isabellina.300": {
+      "value": "#FAFAF8"
+    },
+    "isabellina.200": {
+      "value": "#FDFDFC"
+    },
+    "isabellina.100": {
+      "value": "#FEFEFD"
     },
 
     "lenis": {

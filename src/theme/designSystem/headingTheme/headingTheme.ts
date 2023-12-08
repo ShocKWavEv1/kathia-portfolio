@@ -85,7 +85,14 @@ const basePangeaH10Styles = {
 
 const jumboPangeaStyles = {
   fontFamily: PPPangea.style.fontFamily,
-  fontSize: "230px",
+  fontSize: "260px",
+  lineHeight: "190px",
+};
+
+const jumboMDPangeaStyles = {
+  fontFamily: PPPangea.style.fontFamily,
+  fontSize: "235px",
+  lineHeight: "170px",
 };
 
 /* JUMBO STYLES */
@@ -112,6 +119,33 @@ const JUMBOPANGEABOLD = defineStyle({
 
 const JUMBOPANGEABOLDER = defineStyle({
   ...jumboPangeaStyles,
+  fontWeight: 700,
+});
+
+/* JUMBO MD STYLES */
+
+const JUMBOMDPANGEALIGHT = defineStyle({
+  ...jumboMDPangeaStyles,
+  fontWeight: 300,
+});
+
+const JUMBOMDPANGEAREGULAR = defineStyle({
+  ...jumboMDPangeaStyles,
+  fontWeight: 400,
+});
+
+const JUMBOMDPANGEAMEDIUM = defineStyle({
+  ...jumboMDPangeaStyles,
+  fontWeight: 500,
+});
+
+const JUMBOMDPANGEABOLD = defineStyle({
+  ...jumboMDPangeaStyles,
+  fontWeight: 600,
+});
+
+const JUMBOMDPANGEABOLDER = defineStyle({
+  ...jumboMDPangeaStyles,
   fontWeight: 700,
 });
 
@@ -393,6 +427,11 @@ export const HeadingTheme = defineStyleConfig({
     JUMBOPANGEAMEDIUM,
     JUMBOPANGEABOLD,
     JUMBOPANGEABOLDER,
+    JUMBOMDPANGEALIGHT,
+    JUMBOMDPANGEAREGULAR,
+    JUMBOMDPANGEAMEDIUM,
+    JUMBOMDPANGEABOLD,
+    JUMBOMDPANGEABOLDER,
     H1PANGEALIGHT,
     H1PANGEAREGULAR,
     H1PANGEAMEDIUM,

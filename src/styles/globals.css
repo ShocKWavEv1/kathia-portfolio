@@ -26,9 +26,68 @@ body {
   z-index: 1;
 }
 
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #052e03;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-text {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.navbar-container {
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  border-bottom: 1px solid #2a6112;
+}
+
+.navbar-routes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rotating {
+  animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @media (prefers-color-scheme: dark) {

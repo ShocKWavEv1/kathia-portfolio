@@ -6,17 +6,16 @@ import { useEffect, useRef } from "react";
 import LoadingBar from "react-top-loading-bar";
 import { ScrollProvider } from " @/hooks/useLenis";
 import theme from " @/theme/theme";
+import Layout from " @/components/layout/layout";
+import Cursor from " @/components/cursor/cursor";
+import { useIsTouchDevice } from "@studio-freight/hamo";
 
-export default function App({
-  Component,
-  pageProps,
-}: {
-  Component: any;
-  pageProps: any;
-}) {
-  const LoadingBarRef: any = useRef(null);
+export default function App({ Component, pageProps }) {
+  const LoadingBarRef = useRef(null);
 
   const router = useRouter();
+
+  const isTouchableDevice = useIsTouchDevice();
 
   useEffect(() => {
     // router event listeners for loadingBar
@@ -45,7 +44,7 @@ export default function App({
     LoadingBarRef.current.continuousStart();
   };
 
-  const handleRouteError = (err: any) => {
+  const handleRouteError = (err) => {
     setTimeout(function () {
       if (err.cancelled) {
         return null;
@@ -60,9 +59,12 @@ export default function App({
         title={"Kathia Romero | Copywriter and lead content"}
         description="construimos experiencias y productos digitales"
       />
-      <LoadingBar ref={LoadingBarRef} height={3} color="#ff98a2" />
+      {!isTouchableDevice ? <Cursor /> : null}
+      <LoadingBar ref={LoadingBarRef} height={3} color="#2a6112" />
       <ScrollProvider>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ScrollProvider>
     </ChakraProvider>
   );

@@ -53,7 +53,7 @@ const baseSMStyles = {
 
 const baseXSStyles = {
   fontFamily: PPMori.style.fontFamily,
-  fontSize: "14px",
+  fontSize: "13px",
 };
 
 const baseXSSStyles = {

@@ -2,10 +2,8 @@ import { customCursor } from " @/constants/constants";
 import { Box } from "@chakra-ui/react";
 import { useIsTouchDevice } from "@studio-freight/hamo";
 import { useEffect } from "react";
-import Hero from "../components/hero/hero";
-import IntroLine from "../components/introLine/introLine";
 
-export default function Home() {
+const Resume = () => {
   const isTouchableDevice = useIsTouchDevice();
 
   useEffect(() => {
@@ -13,10 +11,7 @@ export default function Home() {
     isTouchableDevice === false ? customCursor() : {};
   }, [isTouchableDevice]);
 
-  return (
-    <Box w="100%">
-      <Hero />
-      <IntroLine />
-    </Box>
-  );
-}
+  return <Box w="100%" h="200vh" bg="isabellina.500"></Box>;
+};
+
+export default Resume;

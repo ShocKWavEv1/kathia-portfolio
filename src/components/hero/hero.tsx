@@ -1,10 +1,13 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Slide, Text } from "@chakra-ui/react";
 import { HeroProps } from "./model";
 import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
 import kath from "../../../public/static/images/kath_og.jpeg";
 import asterisk from "../../../public/static/svg/asterisk.svg";
+import TextMask from "../animations/textMask/textMask";
+import SlideY from "../animations/slideY/slide";
+import Fade from "../animations/fade/fade";
 
 const Hero: React.FC<HeroProps> = () => {
   const plane1 = useRef(null);
@@ -62,79 +65,86 @@ const Hero: React.FC<HeroProps> = () => {
       }}
     >
       <Box p="50px 0px">
-        <Heading
-          variant="H7PANGEAREGULAR"
-          color="primary.500"
-          textTransform="uppercase"
-          opacity={0.85}
+        <SlideY direction={20} delay={1} duration={0.45}>
+          <Heading
+            variant="H7PANGEAREGULAR"
+            color="primary.500"
+            textTransform="uppercase"
+            opacity={0.85}
+          >
+            Creative copywriter
+          </Heading>
+        </SlideY>
+      </Box>
+      <Box textAlign="center" textTransform="uppercase">
+        <TextMask
+          content={["Kathia", "Romero"]}
+          variant="JUMBOPANGEAMEDIUM"
+          delay={0.4}
+        />
+      </Box>
+
+      <SlideY direction={20} delay={2} duration={0.5}>
+        <Box
+          w="100%"
+          p="50px 0px"
+          display="flex"
+          placeContent="center"
+          placeItems="center"
         >
-          Creative copywriter
-        </Heading>
-      </Box>
-      <Heading
-        variant="JUMBOPANGEAMEDIUM"
-        color="primary.500"
-        textTransform="uppercase"
-      >
-        Kathia
-      </Heading>
-      <Heading
-        variant="JUMBOPANGEAMEDIUM"
-        color="primary.500"
-        textTransform="uppercase"
-      >
-        Romero
-      </Heading>
+          <Text
+            variant="SMREGULAR"
+            color="primary.500"
+            textTransform="uppercase"
+          >
+            ↓&nbsp;&nbsp;Scroll
+          </Text>
+        </Box>
+      </SlideY>
       <Box
-        w="100%"
-        p="50px 0px"
-        display="flex"
-        placeContent="center"
-        placeItems="center"
+        position="absolute"
+        zIndex={2}
+        top="8%"
+        left="10%"
+        className="rotating"
       >
-        <Text variant="SMREGULAR" color="primary.500" textTransform="uppercase">
-          ↓ Scroll down
-        </Text>
+        <Fade delay={1.25} duration={0.45}>
+          <Image width={120} priority src={asterisk} alt="asterisk" />
+        </Fade>
       </Box>
       <Box
         position="absolute"
         zIndex={2}
-        top="10%"
-        left="9%"
+        top="40%"
+        left="83%"
         className="rotating"
       >
-        <Image width={120} priority src={asterisk} alt="asterisk" />
-      </Box>
-      <Box
-        position="absolute"
-        zIndex={2}
-        top="46%"
-        left="86%"
-        className="rotating"
-      >
-        <Image width={80} priority src={asterisk} alt="asterisk" />
+        <Fade delay={1.5} duration={0.45}>
+          <Image width={80} priority src={asterisk} alt="asterisk" />
+        </Fade>
       </Box>
       <Box
         ref={plane1}
         position="absolute"
         w="220px"
         h="300px"
-        bg="secondary.500"
         zIndex={2}
         top="50%"
         left="50%"
         transform="translate(-50%, -50%)"
       >
-        <Image
-          src={kath}
-          alt={"kath-intro"}
-          placeholder="blur"
-          blurDataURL=""
-          fill={true}
-          style={{
-            objectFit: "cover",
-          }}
-        />
+        <Fade delay={1.75} duration={0.5}>
+          <Image
+            src={kath}
+            alt={"kath-intro"}
+            placeholder="blur"
+            blurDataURL=""
+            fill={true}
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </Fade>
       </Box>
     </Box>
   );

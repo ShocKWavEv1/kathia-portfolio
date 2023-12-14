@@ -9,7 +9,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <Box w="100%" display="flex" flexDirection="column">
       <Navbar />
       <Box w="100%">{children}</Box>
-      <Box w="100%" h="100vh" bg="marian.500" />
       <Footer />
     </Box>
   );

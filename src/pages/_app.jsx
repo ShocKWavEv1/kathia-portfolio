@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Meta
-        title={"Kathia Romero | Copywriter and lead content"}
+        title={"Kathia Romero. Copywriter and lead content."}
         description="construimos experiencias y productos digitales"
       />
       {!isTouchableDevice ? <Cursor /> : null}

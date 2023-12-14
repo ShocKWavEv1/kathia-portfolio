@@ -22,7 +22,11 @@
     "**/*.ts",
     "**/*.tsx",
     "src/pages/index.jsx",
-    "src/pages/_app.jsx"
+    "src/pages/_app.jsx",
+    "src/pages/about/index.jsx",
+    "src/pages/portfolio/index.jsx",
+    "src/pages/resume/index.jsx",
+    "src/pages/workflow/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

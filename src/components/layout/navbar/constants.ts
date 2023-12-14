@@ -1,6 +1,6 @@
 export const ROUTES = [
   {
-    path: "about-me",
+    path: "about",
     label: "Sobre mí",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
@@ -15,7 +15,7 @@ export const ROUTES = [
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
-    path: "cv",
+    path: "resume",
     label: "Curriculum",
     styles: { borderRight: "none", borderRightColor: "primary.500" },
   },

@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = () => {
         color="primary.500"
       >
         <Text as="span" variant="XSREGULAR" textTransform="uppercase">
-          2023 Kathia Romero - housecolor
+          2024 Kathia Romero
         </Text>
       </Box>
       <Box

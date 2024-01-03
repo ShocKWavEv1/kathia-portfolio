@@ -3,7 +3,7 @@ import { IntroLineProps } from "./model";
 
 const IntroLine: React.FC<IntroLineProps> = () => {
   return (
-    <Box w="100%" h="100vh" bg="isabellina.500">
+    <Box w="100%" h="100vh" bg="secondary.500">
       Hi
     </Box>
   );

@@ -22,8 +22,20 @@ export const ROUTES = [
 ];
 
 export const hover: any = {
-  bg: "primary.500",
-  color: "isabellina.500",
+  bg: [
+    "isabellina.500",
+    "isabellina.500",
+    "isabellina.500",
+    "isabellina.500",
+    "primary.500",
+  ],
+  color: [
+    "primary.500",
+    "primary.500",
+    "primary.500",
+    "primary.500",
+    "isabellina.500",
+  ],
   transitionDuration: "0.25s",
   transitionTimingFunction: "ease-in-out",
 };

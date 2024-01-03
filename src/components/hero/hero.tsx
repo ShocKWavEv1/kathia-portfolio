@@ -1,4 +1,4 @@
-import { Box, Heading, Slide, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import { HeroProps } from "./model";
 import Image from "next/image";
 import { useRef } from "react";
@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = () => {
         manageMouseMove(e);
       }}
     >
-      <Box p="50px 0px">
+      <Box p="60px 0px">
         <SlideY direction={20} delay={1} duration={0.45}>
           <Heading
             variant="H7PANGEAREGULAR"

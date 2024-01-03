@@ -36,9 +36,9 @@ export const ButtonTheme = defineStyleConfig({
     borderRadius: "2px",
     fontFamily: "Roobert",
     fontWeight: "400",
-    border: "2px solid",
+    border: "1px solid",
     _hover: {
-      transform: "scale(1.05)",
+      transform: "scale(1)",
     },
     _active: {
       transform: "scale(0.98)",
@@ -66,7 +66,7 @@ export const ButtonTheme = defineStyleConfig({
   // Styles for the visual style variations
   variants: {
     solid: (props) => ({
-      border: "2px solid",
+      border: "1px solid",
       borderColor: mode(
         `${props.colorScheme}.500`,
         `${props.colorScheme}.500`
@@ -106,7 +106,7 @@ export const ButtonTheme = defineStyleConfig({
       },
     }),
     outline: (props) => ({
-      border: "2px solid",
+      border: "1px solid",
       borderColor: mode(
         `${props.colorScheme}.500`,
         `${props.colorScheme}.400`

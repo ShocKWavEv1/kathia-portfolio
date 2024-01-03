@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavbarProps } from "./model";
 import { Box, Text } from "@chakra-ui/react";
 import { ROUTES, defaultStyles, hover } from "./constants";
 import { useRouter } from "next/router";
 import SlideY from " @/components/animations/slideY/slide";
+import SideMenu from "./sideMenu/sideMenu";
+import { AnimatePresence } from "framer-motion";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const router = useRouter();
+
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <Box w="100%" bg="isabellina.500">
@@ -96,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             p="0px 15px"
             {...defaultStyles}
             _hover={hover}
-            cursor="pointer"
+            cursor={["auto", "auto", "auto", "auto", "pointer"]}
           >
             <Text
               display={["none", "none", "none", "none", "block"]}
@@ -109,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             </Text>
             <Box
               display={["flex", "flex", "flex", "flex", "none"]}
-              w="50px"
+              w="26px"
               h="100%"
               placeContent="center"
               placeItems="center"
@@ -122,14 +126,18 @@ const Navbar: React.FC<NavbarProps> = () => {
                 placeContent="center"
                 flexDirection="column"
                 cursor="pointer"
+                onClick={() => setOpen(true)}
               >
-                <Box w="100%" h="2px" bg="primary.500" />
-                <Box mt="6px" w="100%" h="2px" bg="primary.500" />
+                <Box w="100%" h="1px" bg="primary.500" />
+                <Box mt="6px" w="100%" h="1px" bg="primary.500" />
               </Box>
             </Box>
           </Box>
         </Box>
       </SlideY>
+      <AnimatePresence mode="wait">
+        {isOpen && <SideMenu setOpen={() => setOpen(false)} />}
+      </AnimatePresence>
     </Box>
   );
 };

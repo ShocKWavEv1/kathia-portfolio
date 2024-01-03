@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     window.scroll({ top: 0 });
-    isTouchableDevice === false ? customCursor() : {};
+    if (!isTouchableDevice) customCursor();
   }, [isTouchableDevice]);
 
   return (

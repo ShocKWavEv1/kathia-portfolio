@@ -2,6 +2,7 @@ import { customCursor } from " @/constants/constants";
 import { Box } from "@chakra-ui/react";
 import { useIsTouchDevice } from "@studio-freight/hamo";
 import { useEffect } from "react";
+import PageTitle from "../../components/pageTitle/pageTitle";
 
 const Portfolio = () => {
   const isTouchableDevice = useIsTouchDevice();
@@ -11,7 +12,14 @@ const Portfolio = () => {
     isTouchableDevice === false ? customCursor() : {};
   }, [isTouchableDevice]);
 
-  return <Box w="100%" h="200vh" bg="isabellina.500"></Box>;
+  return (
+    <Box w="100%" bg="isabellina.500">
+      <Box w="100%" p="80px 20px" textAlign="center" bg="isabellina.500">
+        <PageTitle text="Portafolio" variant={["JUMBOSMPANGEAREGULAR"]} />
+      </Box>
+      <Box w="100%" h="100vh" bg="isabellina.500"></Box>
+    </Box>
+  );
 };
 
 export default Portfolio;

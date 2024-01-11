@@ -54,14 +54,26 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
       <Box w="100%" p="20px 20px 0px 20px">
         <TextMask
           content={["Kathia Romero"]}
-          variant="H6PANGEAREGULAR"
+          variant={[
+            "H7PANGEAREGULAR",
+            "H7PANGEAREGULAR",
+            "H6PANGEAREGULAR",
+            "H6PANGEAREGULAR",
+            "H6PANGEAREGULAR",
+          ]}
           delay={1}
         />
       </Box>
       <Box w="100%" p="0px 20px 0px 20px">
         <TextMask
           content={["Creative Copywriter"]}
-          variant="H8PANGEAREGULAR"
+          variant={[
+            "H9PANGEAREGULAR",
+            "H9PANGEAREGULAR",
+            "H8PANGEAREGULAR",
+            "H8PANGEAREGULAR",
+            "H8PANGEAREGULAR",
+          ]}
           delay={1}
         />
       </Box>
@@ -87,7 +99,17 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
                   router.push(item.path);
                 }}
               >
-                <Text as="span" variant="XXLLIGHT" color="primary.500">
+                <Text
+                  as="span"
+                  variant={[
+                    "XXLLIGHT",
+                    "XXLLIGHT",
+                    "XXLLIGHT",
+                    "XXLLIGHT",
+                    "XXLLIGHT",
+                  ]}
+                  color="primary.500"
+                >
                   <motion.p
                     onMouseOver={() => {
                       setSelectedLink({ isActive: true, index });
@@ -137,7 +159,10 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
         placeContent="center"
         flexDirection="column"
       >
-        <Text variant="LGLIGHT" color="primary.500">
+        <Text
+          variant={["MDLIGHT", "LGLIGHT", "LGLIGHT", "LGLIGHT", "LGLIGHT"]}
+          color="primary.500"
+        >
           ¡Hagamos algo increible juntos!
         </Text>
         <Box

@@ -3,7 +3,6 @@ import { Box } from "@chakra-ui/react";
 import { useIsTouchDevice } from "@studio-freight/hamo";
 import { useEffect } from "react";
 import Hero from "../components/hero/hero";
-import IntroLine from "../components/introLine/introLine";
 
 export default function Home() {
   const isTouchableDevice = useIsTouchDevice();
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <Box w="100%">
       <Hero />
-      <IntroLine />
     </Box>
   );
 }

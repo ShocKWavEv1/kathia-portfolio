@@ -95,6 +95,24 @@ const jumboMDPangeaStyles = {
   lineHeight: "170px",
 };
 
+const jumboSMPangeaStyles = {
+  fontFamily: PPPangea.style.fontFamily,
+  fontSize: "180px",
+  lineHeight: "140px",
+};
+
+const jumboXSPangeaStyles = {
+  fontFamily: PPPangea.style.fontFamily,
+  fontSize: "130px",
+  lineHeight: "100px",
+};
+
+const jumboXXSPangeaStyles = {
+  fontFamily: PPPangea.style.fontFamily,
+  fontSize: "90px",
+  lineHeight: "80px",
+};
+
 /* JUMBO STYLES */
 
 const JUMBOPANGEALIGHT = defineStyle({
@@ -146,6 +164,87 @@ const JUMBOMDPANGEABOLD = defineStyle({
 
 const JUMBOMDPANGEABOLDER = defineStyle({
   ...jumboMDPangeaStyles,
+  fontWeight: 700,
+});
+
+/* JUMBO SM STYLES */
+
+const JUMBOSMPANGEALIGHT = defineStyle({
+  ...jumboSMPangeaStyles,
+  fontWeight: 300,
+});
+
+const JUMBOSMPANGEAREGULAR = defineStyle({
+  ...jumboSMPangeaStyles,
+  fontWeight: 400,
+});
+
+const JUMBOSMPANGEAMEDIUM = defineStyle({
+  ...jumboSMPangeaStyles,
+  fontWeight: 500,
+});
+
+const JUMBOSMPANGEABOLD = defineStyle({
+  ...jumboSMPangeaStyles,
+  fontWeight: 600,
+});
+
+const JUMBOSMPANGEABOLDER = defineStyle({
+  ...jumboSMPangeaStyles,
+  fontWeight: 700,
+});
+
+/* JUMBO XS STYLES */
+
+const JUMBOXSPANGEALIGHT = defineStyle({
+  ...jumboXSPangeaStyles,
+  fontWeight: 300,
+});
+
+const JUMBOXSPANGEAREGULAR = defineStyle({
+  ...jumboXSPangeaStyles,
+  fontWeight: 400,
+});
+
+const JUMBOXSPANGEAMEDIUM = defineStyle({
+  ...jumboXSPangeaStyles,
+  fontWeight: 500,
+});
+
+const JUMBOXSPANGEABOLD = defineStyle({
+  ...jumboXSPangeaStyles,
+  fontWeight: 600,
+});
+
+const JUMBOXSPANGEABOLDER = defineStyle({
+  ...jumboXSPangeaStyles,
+  fontWeight: 700,
+});
+
+/* JUMBO XXS STYLES */
+
+const JUMBOXXSPANGEALIGHT = defineStyle({
+  ...jumboXXSPangeaStyles,
+  fontWeight: 300,
+});
+
+const JUMBOXXSPANGEAREGULAR = defineStyle({
+  ...jumboXXSPangeaStyles,
+  fontWeight: 400,
+});
+
+const JUMBOXXSPANGEAMEDIUM = defineStyle({
+  ...jumboXXSPangeaStyles,
+  fontWeight: 500,
+});
+
+const JUMBOXXSPANGEABOLD = defineStyle({
+  ...jumboXXSPangeaStyles,
+  fontWeight: 600,
+});
+
+const JUMBOXXSPANGEABOLDER = defineStyle({
+  ...jumboXXSPangeaStyles,
   fontWeight: 700,
 });
 
@@ -432,6 +531,21 @@ export const HeadingTheme = defineStyleConfig({
     JUMBOMDPANGEAMEDIUM,
     JUMBOMDPANGEABOLD,
     JUMBOMDPANGEABOLDER,
+    JUMBOSMPANGEALIGHT,
+    JUMBOSMPANGEAREGULAR,
+    JUMBOSMPANGEAMEDIUM,
+    JUMBOSMPANGEABOLD,
+    JUMBOSMPANGEABOLDER,
+    JUMBOXSPANGEALIGHT,
+    JUMBOXSPANGEAREGULAR,
+    JUMBOXSPANGEAMEDIUM,
+    JUMBOXSPANGEABOLD,
+    JUMBOXSPANGEABOLDER,
+    JUMBOXXSPANGEALIGHT,
+    JUMBOXXSPANGEAREGULAR,
+    JUMBOXXSPANGEAMEDIUM,
+    JUMBOXXSPANGEABOLD,
+    JUMBOXXSPANGEABOLDER,
     H1PANGEALIGHT,
     H1PANGEAREGULAR,
     H1PANGEAMEDIUM,

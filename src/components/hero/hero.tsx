@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = () => {
   return (
     <Box
       w="100%"
-      h="auto"
+      h="calc(100vh - 84px)"
       bg="isabellina.500"
       display="flex"
       alignItems="center"
@@ -64,10 +64,16 @@ const Hero: React.FC<HeroProps> = () => {
         manageMouseMove(e);
       }}
     >
-      <Box p="60px 0px">
+      <Box p="0px 0px 40px 0px">
         <SlideY direction={20} delay={1} duration={0.45}>
           <Heading
-            variant="H7PANGEAREGULAR"
+            variant={[
+              "H10PANGEAREGULAR",
+              "H9PANGEAREGULAR",
+              "H8PANGEAREGULAR",
+              "H7PANGEAREGULAR",
+              "H7PANGEAREGULAR",
+            ]}
             color="primary.500"
             textTransform="uppercase"
             opacity={0.85}
@@ -79,33 +85,22 @@ const Hero: React.FC<HeroProps> = () => {
       <Box textAlign="center" textTransform="uppercase">
         <TextMask
           content={["Kathia", "Romero"]}
-          variant="JUMBOPANGEAMEDIUM"
+          variant={[
+            "JUMBOXXSPANGEAMEDIUM",
+            "JUMBOXSPANGEAMEDIUM",
+            "JUMBOSMPANGEAMEDIUM",
+            "JUMBOMDPANGEAMEDIUM",
+            "JUMBOPANGEAMEDIUM",
+          ]}
           delay={0.4}
         />
       </Box>
-
-      <SlideY direction={20} delay={2} duration={0.5}>
-        <Box
-          w="100%"
-          p="50px 0px"
-          display="flex"
-          placeContent="center"
-          placeItems="center"
-        >
-          <Text
-            variant="SMREGULAR"
-            color="primary.500"
-            textTransform="uppercase"
-          >
-            ↓&nbsp;&nbsp;Scroll
-          </Text>
-        </Box>
-      </SlideY>
       <Box
         position="absolute"
         zIndex={2}
         top="8%"
-        left="10%"
+        left={["5%", "5%", "10%", "10%", "10%"]}
+        display={["block", "block", "block", "block", "block"]}
         className="rotating"
       >
         <Fade delay={1.25} duration={0.45}>
@@ -115,8 +110,9 @@ const Hero: React.FC<HeroProps> = () => {
       <Box
         position="absolute"
         zIndex={2}
-        top="40%"
-        left="83%"
+        top={["80%", "80%", "40%", "40%", "40%"]}
+        left={["75%", "83%", "87%", "87%", "83%"]}
+        display={["block", "block", "block", "block", "block"]}
         className="rotating"
       >
         <Fade delay={1.5} duration={0.45}>
@@ -126,8 +122,8 @@ const Hero: React.FC<HeroProps> = () => {
       <Box
         ref={plane1}
         position="absolute"
-        w="220px"
-        h="300px"
+        w={["180px", "220px", "220px", "220px", "220px"]}
+        h={["260px", "300px", "300px", "300px", "300px"]}
         zIndex={2}
         top="50%"
         left="50%"

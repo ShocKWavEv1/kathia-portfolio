@@ -113,7 +113,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               <Text pt="10px" variant="MDREGULAR" color="primary.500">
                 Tengo experiencia en crear conceptos para campañas de
                 temporalidades, parrillas, peloteos para pitches, lines, radios,
-                reportes de KPI'S, redacción para blogs, edición de video,
+                reportes de KPI&apos;S, redacción para blogs, edición de video,
                 retoque fotográfico, racionales, manifestos y parte de
                 estrategía digital.
               </Text>

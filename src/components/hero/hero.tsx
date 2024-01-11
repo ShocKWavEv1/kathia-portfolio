@@ -104,7 +104,7 @@ const Hero: React.FC<HeroProps> = () => {
         className="rotating"
       >
         <Fade delay={1.25} duration={0.45}>
-          <Image width={120} priority src={asterisk} alt="asterisk" />
+          <Image width={120} priority src={asterisk} alt="asterisk-1" />
         </Fade>
       </Box>
       <Box

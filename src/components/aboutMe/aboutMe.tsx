@@ -64,10 +64,29 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                   flexDirection="column"
                   p="0px 15px"
                 >
-                  <Text pt="15px" variant="SMREGULAR" color="primary.500">
+                  <Text
+                    pt="15px"
+                    variant={[
+                      "XSREGULAR",
+                      "SMREGULAR",
+                      "SMREGULAR",
+                      "SMREGULAR",
+                      "SMREGULAR",
+                    ]}
+                    color="primary.500"
+                  >
                     Senior Copywriter & Creative
                   </Text>
-                  <Text variant="XLMEDIUM" color="primary.500">
+                  <Text
+                    variant={[
+                      "LGMEDIUM",
+                      "XLMEDIUM",
+                      "XLMEDIUM",
+                      "XLMEDIUM",
+                      "XLMEDIUM",
+                    ]}
+                    color="primary.500"
+                  >
                     Kathia Romero Paredes
                   </Text>
                 </Box>

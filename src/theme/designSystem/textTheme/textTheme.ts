@@ -26,6 +26,11 @@ const PPMori = localFonts({
   ],
 });
 
+const baseAccordeonIconStyles = {
+  fontFamily: PPMori.style.fontFamily,
+  fontSize: "8px",
+};
+
 const baseXXLStyles = {
   fontFamily: PPMori.style.fontFamily,
   fontSize: "34px",
@@ -61,11 +66,34 @@ const baseXSSStyles = {
   fontSize: "10px",
 };
 
+/* ACCORDEON ICON */
+
+const ACCORDEONICONLIGHT = defineStyle({
+  ...baseXXLStyles,
+  fontWeight: 300,
+});
+
+const ACCORDEONICONREGULAR = defineStyle({
+  ...baseXXLStyles,
+  fontWeight: 400,
+});
+
+const ACCORDEONICONMEDIUM = defineStyle({
+  ...baseXXLStyles,
+  fontWeight: 500,
+});
+
+const ACCORDEONICONSEMIBOLD = defineStyle({
+  ...baseXXLStyles,
+  fontWeight: 600,
+});
+
 /* XXL VARIANTS */
 const XXLLIGHT = defineStyle({
   ...baseXXLStyles,
   fontWeight: 300,
 });
+
 const XXLREGULAR = defineStyle({
   ...baseXXLStyles,
   fontWeight: 400,
@@ -203,6 +231,10 @@ const XXSSEMIBOLD = defineStyle({
 
 export const TextTheme = defineStyleConfig({
   variants: {
+    ACCORDEONICONLIGHT,
+    ACCORDEONICONREGULAR,
+    ACCORDEONICONMEDIUM,
+    ACCORDEONICONSEMIBOLD,
     XXLLIGHT,
     XXLREGULAR,
     XXLMEDIUM,

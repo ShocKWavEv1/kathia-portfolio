@@ -24,16 +24,28 @@ export const SKILLS = [
     title: "Estudios",
     skills: [
       {
-        label: "Máster en UX",
-        value: "2022 - 2023",
+        label: "Diplomado de After Effects - Edu Mac",
+        value: "2022 - 2022",
       },
       {
-        label: "Carrera de diseño UX/UI",
-        value: "2021 - 2022",
+        label: "Diplomado de Edición de video - Edu Mac",
+        value: "2021 - 2021",
       },
       {
-        label: "Carrera de Diseño Gráfico",
-        value: "2016 - 2020",
+        label: "Diplomado en fotografía - Edu Mac",
+        value: "2020 - 2020",
+      },
+      {
+        label: "Diplomado en Diseño Gráfico - Edu Mac",
+        value: "2019 - 2019",
+      },
+      {
+        label: "Diplomado en fotografía de producto Amerike",
+        value: "2018 - 2018",
+      },
+      {
+        label: "Licenciatura en Publicidad Amerike",
+        value: "2014 - 2017",
       },
     ],
   },

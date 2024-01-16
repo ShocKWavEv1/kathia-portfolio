@@ -3,6 +3,7 @@ import { Box } from "@chakra-ui/react";
 import { useIsTouchDevice } from "@studio-freight/hamo";
 import { useEffect } from "react";
 import PageTitle from "../../components/pageTitle/pageTitle";
+import WorkflowAccordeon from "../../components/workflow/workflow";
 
 const Workflow = () => {
   const isTouchableDevice = useIsTouchDevice();
@@ -15,9 +16,20 @@ const Workflow = () => {
   return (
     <Box w="100%" bg="isabellina.500">
       <Box w="100%" p="80px 20px" textAlign="center" bg="isabellina.500">
-        <PageTitle text="Workflow" variant={["JUMBOSMPANGEAREGULAR"]} />
+        <PageTitle
+          text="Workflow"
+          variant={[
+            "JUMBOXXSPANGEAREGULAR",
+            "JUMBOXXSPANGEAREGULAR",
+            "JUMBOXSPANGEAREGULAR",
+            "JUMBOXSPANGEAREGULAR",
+            "JUMBOSMPANGEAREGULAR",
+          ]}
+        />
       </Box>
-      <Box w="100%" h="100vh" bg="isabellina.500"></Box>
+      <Box w="100%" pb="80px" bg="isabellina.500">
+        <WorkflowAccordeon />
+      </Box>
     </Box>
   );
 };

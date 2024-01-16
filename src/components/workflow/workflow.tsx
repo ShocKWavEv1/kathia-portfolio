@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
   Stack,
 } from "@chakra-ui/react";
 import { WorkflowProps } from "./model";
@@ -31,12 +30,16 @@ const WorkflowAccordeon: React.FC<WorkflowProps> = ({}) => {
           <Accordion borderColor="primary.500" bg="isabellina.500" allowToggle>
             {WORKFLOW.map((item: any, index: number) => {
               return (
-                <AccordionItem key={item.title} p="15px 0px">
+                <AccordionItem
+                  position="relative"
+                  key={item.title}
+                  p="15px 0px"
+                >
                   {({ isExpanded }) => (
                     <>
                       <h2>
                         <AccordionButton
-                          position="relative"
+                          height="54px"
                           _hover={{ bg: "isabellina.500" }}
                         >
                           <Box as="span" flex="1" textAlign="left">
@@ -55,40 +58,27 @@ const WorkflowAccordeon: React.FC<WorkflowProps> = ({}) => {
                               {item.title}
                             </Text>
                           </Box>
-                          <Box
-                            position="absolute"
-                            left={[
-                              "calc(100% - 38px)",
-                              "calc(100% - 40px)",
-                              "calc(100% - 44px)",
-                              "calc(100% - 44px)",
-                              "calc(100% - 44px)",
-                              "calc(100% - 44px)",
-                            ]}
-                            w="auto"
+                          <motion.div
+                            animate={{
+                              rotate: isExpanded ? -45 : 0,
+                            }}
+                            transition={{ duration: 0.25, ease: "easeInOut" }}
                           >
-                            <motion.div
-                              animate={{
-                                rotate: isExpanded ? -45 : 0,
-                              }}
-                              transition={{ duration: 0.25, ease: "easeInOut" }}
+                            <Text
+                              variant="MDLIGHT"
+                              fontSize={[
+                                "40px",
+                                "50px",
+                                "54px",
+                                "54px",
+                                "54px",
+                                "54px",
+                              ]}
+                              color="primary.500"
                             >
-                              <Text
-                                variant="MDLIGHT"
-                                fontSize={[
-                                  "40px",
-                                  "50px",
-                                  "54px",
-                                  "54px",
-                                  "54px",
-                                  "54px",
-                                ]}
-                                color="primary.500"
-                              >
-                                +
-                              </Text>
-                            </motion.div>
-                          </Box>
+                              +
+                            </Text>
+                          </motion.div>
                         </AccordionButton>
                       </h2>
                       <AccordionPanel p="20px 15px">

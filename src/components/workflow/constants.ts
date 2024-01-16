@@ -46,7 +46,7 @@ export const WORKFLOW = [
     ],
   },
   {
-    title: "Optimización SEO (para pauta)",
+    title: "Optimización SEO (pauta)",
     items: [
       {
         description:

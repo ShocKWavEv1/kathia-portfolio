@@ -113,6 +113,12 @@ const jumboXXSPangeaStyles = {
   lineHeight: "80px",
 };
 
+const jumboXXXSPangeaStyles = {
+  fontFamily: PPPangea.style.fontFamily,
+  fontSize: "76px",
+  lineHeight: "80px",
+};
+
 /* JUMBO STYLES */
 
 const JUMBOPANGEALIGHT = defineStyle({
@@ -245,6 +251,33 @@ const JUMBOXXSPANGEABOLD = defineStyle({
 
 const JUMBOXXSPANGEABOLDER = defineStyle({
   ...jumboXXSPangeaStyles,
+  fontWeight: 700,
+});
+
+/* JUMBO XXXS STYLES */
+
+const JUMBOXXXSPANGEALIGHT = defineStyle({
+  ...jumboXXXSPangeaStyles,
+  fontWeight: 300,
+});
+
+const JUMBOXXXSPANGEAREGULAR = defineStyle({
+  ...jumboXXXSPangeaStyles,
+  fontWeight: 400,
+});
+
+const JUMBOXXXSPANGEAMEDIUM = defineStyle({
+  ...jumboXXXSPangeaStyles,
+  fontWeight: 500,
+});
+
+const JUMBOXXXSPANGEABOLD = defineStyle({
+  ...jumboXXXSPangeaStyles,
+  fontWeight: 600,
+});
+
+const JUMBOXXXSPANGEABOLDER = defineStyle({
+  ...jumboXXXSPangeaStyles,
   fontWeight: 700,
 });
 
@@ -546,6 +579,11 @@ export const HeadingTheme = defineStyleConfig({
     JUMBOXXSPANGEAMEDIUM,
     JUMBOXXSPANGEABOLD,
     JUMBOXXSPANGEABOLDER,
+    JUMBOXXXSPANGEALIGHT,
+    JUMBOXXXSPANGEAREGULAR,
+    JUMBOXXXSPANGEAMEDIUM,
+    JUMBOXXXSPANGEABOLD,
+    JUMBOXXXSPANGEABOLDER,
     H1PANGEALIGHT,
     H1PANGEAREGULAR,
     H1PANGEAMEDIUM,

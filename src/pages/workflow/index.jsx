@@ -15,11 +15,22 @@ const Workflow = () => {
 
   return (
     <Box w="100%" bg="isabellina.500">
-      <Box w="100%" p="80px 20px" textAlign="center" bg="isabellina.500">
+      <Box
+        w="100%"
+        p={[
+          "80px 20px 60px 20px",
+          "80px 20px 60px 20px",
+          "80px 20px 80px 20px",
+          "80px 20px 80px 20px",
+          "80px 20px 80px 20px",
+        ]}
+        textAlign="center"
+        bg="isabellina.500"
+      >
         <PageTitle
           text="Workflow"
           variant={[
-            "JUMBOXXSPANGEAREGULAR",
+            "JUMBOXXXSPANGEAREGULAR",
             "JUMBOXXSPANGEAREGULAR",
             "JUMBOXSPANGEAREGULAR",
             "JUMBOXSPANGEAREGULAR",

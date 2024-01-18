@@ -46,8 +46,8 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                 borderBottom="1px solid"
                 borderBottomColor="primary.500"
                 gridTemplateColumns={[
-                  "1fr",
-                  "1fr",
+                  "auto 1fr",
+                  "auto 1fr",
                   "1fr 1fr",
                   "1fr 1fr",
                   "1fr 1fr",

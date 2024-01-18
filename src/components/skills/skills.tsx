@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Show, Text } from "@chakra-ui/react";
 import { SkillsProps } from "./model";
 import Fade from "../animations/fade/fade";
 
@@ -46,8 +46,8 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                 borderBottom="1px solid"
                 borderBottomColor="primary.500"
                 gridTemplateColumns={[
-                  "auto 1fr",
-                  "auto 1fr",
+                  "1fr",
+                  "1fr",
                   "1fr 1fr",
                   "1fr 1fr",
                   "1fr 1fr",
@@ -89,7 +89,27 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                     </Text>
                   )}
                 </Box>
-                {skills.title !== "Estudios" && (
+                {skills.title === "Estudios" ? (
+                  <Box
+                    w="100%"
+                    display={["none", "none", "flex", "flex", "flex"]}
+                    alignItems="center"
+                    justifyContent="flex-end"
+                  >
+                    <Text
+                      variant={[
+                        "SMREGULAR",
+                        "SMREGULAR",
+                        "MDREGULAR",
+                        "MDREGULAR",
+                        "MDREGULAR",
+                      ]}
+                      color="primary.500"
+                    >
+                      {item.value}
+                    </Text>
+                  </Box>
+                ) : (
                   <Box
                     w="100%"
                     display="flex"

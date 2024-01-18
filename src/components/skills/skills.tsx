@@ -56,8 +56,9 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                 <Box
                   w="100%"
                   display="flex"
-                  alignItems="center"
-                  justifyContent="flex-start"
+                  alignItems="flex-start"
+                  justifyContent="center"
+                  flexDirection="column"
                 >
                   <Text
                     variant={[
@@ -71,26 +72,44 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                   >
                     {item.label}
                   </Text>
+                  {skills.title === "Estudios" && (
+                    <Text
+                      pt="10px"
+                      display={["block", "block", "none", "none", "none"]}
+                      variant={[
+                        "SMREGULAR",
+                        "SMREGULAR",
+                        "MDREGULAR",
+                        "MDREGULAR",
+                        "MDREGULAR",
+                      ]}
+                      color="primary.500"
+                    >
+                      {item.value}
+                    </Text>
+                  )}
                 </Box>
-                <Box
-                  w="100%"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="flex-end"
-                >
-                  <Text
-                    variant={[
-                      "SMREGULAR",
-                      "SMREGULAR",
-                      "MDREGULAR",
-                      "MDREGULAR",
-                      "MDREGULAR",
-                    ]}
-                    color="primary.500"
+                {skills.title !== "Estudios" && (
+                  <Box
+                    w="100%"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="flex-end"
                   >
-                    {item.value}
-                  </Text>
-                </Box>
+                    <Text
+                      variant={[
+                        "SMREGULAR",
+                        "SMREGULAR",
+                        "MDREGULAR",
+                        "MDREGULAR",
+                        "MDREGULAR",
+                      ]}
+                      color="primary.500"
+                    >
+                      {item.value}
+                    </Text>
+                  </Box>
+                )}
               </Box>
             );
           })}

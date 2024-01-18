@@ -26,14 +26,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
       >
         {IMAGES.map((item: any, index: number) => {
           return (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              style={{ width: "100%" }}
-            >
+            <Box w="100%" key={item.title}>
               <motion.div
                 onMouseOver={() => {
                   setSelectedLink({ isActive: true, index });
@@ -77,7 +70,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
                   </Box>
                 </Box>
               </motion.div>
-            </motion.div>
+            </Box>
           );
         })}
       </Box>

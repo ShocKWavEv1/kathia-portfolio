@@ -23,7 +23,6 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
       <Box
         p={["0px 30px", "0px 30px", "0px 30px", "0px", "0px"]}
         w={["100%", "100%", "100%", "80%", "70%"]}
-        h="auto"
       >
         {IMAGES.map((item: any, index: number) => {
           return (
@@ -43,6 +42,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
                   setSelectedLink({ isActive: false, index });
                 }}
                 variants={blur}
+                whileTap={{ scale: 0.95 }}
                 animate={
                   selectedLink.isActive && selectedLink.index != index
                     ? "open"
@@ -50,7 +50,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
                 }
                 style={{ width: "100%" }}
               >
-                <Box w="100%" p="20px 0px">
+                <Box w="100%" m="40px 0px">
                   <Box
                     w="100%"
                     p="30px 30px"

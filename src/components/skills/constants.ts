@@ -40,11 +40,11 @@ export const SKILLS = [
         value: "2019 - 2019",
       },
       {
-        label: "Diplomado en fotografía de producto Amerike",
+        label: "Diplomado en fotografía de producto - Amerike",
         value: "2018 - 2018",
       },
       {
-        label: "Licenciatura en Publicidad Amerike",
+        label: "Licenciatura en Publicidad - Amerike",
         value: "2014 - 2017",
       },
     ],

@@ -32,7 +32,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               "flex-end",
             ]}
           >
-            <Fade delay={0.75} duration={1}>
+            <Fade delay={0} duration={1}>
               <Box
                 w="100%"
                 h="auto"

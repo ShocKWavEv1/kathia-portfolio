@@ -38,7 +38,7 @@ const Portfolio = () => {
           ]}
         />
       </Box>
-      <Box w="100%" pb={["40px", "60px", "80px", "80px", "80px"]}>
+      <Box w="100%" pb={["0px", "20px", "40px", "40px", "40px"]}>
         <PortfolioGrid />
       </Box>
     </Box>

@@ -28,7 +28,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
           return (
             <motion.div
               key={item.title}
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
@@ -50,7 +50,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
                 }
                 style={{ width: "100%" }}
               >
-                <Box w="100%" m="40px 0px">
+                <Box w="100%" pb="40px">
                   <Box
                     w="100%"
                     p="30px 30px"

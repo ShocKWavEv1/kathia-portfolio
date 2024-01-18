@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { TextMaskProps } from "./model";
 
-const TextMask: React.FC<TextMaskProps> = ({ content, variant, delay }) => {
+const TextMask: React.FC<TextMaskProps> = ({
+  content,
+  variant,
+  delay,
+  color,
+}) => {
   const phrases = content;
   const animation = {
     initial: { y: "100%" },
@@ -33,7 +38,7 @@ const TextMask: React.FC<TextMaskProps> = ({ content, variant, delay }) => {
               initial="initial"
               animate={inView ? "enter" : ""}
             >
-              <Heading variant={variant} color="primary.500">
+              <Heading variant={variant} color={color ? color : "primary.500"}>
                 {phrase}
               </Heading>
             </motion.div>

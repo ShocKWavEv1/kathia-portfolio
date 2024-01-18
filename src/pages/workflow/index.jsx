@@ -18,8 +18,8 @@ const Workflow = () => {
       <Box
         w="100%"
         p={[
-          "80px 20px 60px 20px",
-          "80px 20px 60px 20px",
+          "40px 10px 40px 10px",
+          "60px 20px 60px 20px",
           "80px 20px 80px 20px",
           "80px 20px 80px 20px",
           "80px 20px 80px 20px",
@@ -38,7 +38,11 @@ const Workflow = () => {
           ]}
         />
       </Box>
-      <Box w="100%" pb="80px" bg="isabellina.500">
+      <Box
+        w="100%"
+        pb={["40px", "60px", "80px", "80px", "80px"]}
+        bg="isabellina.500"
+      >
         <WorkflowAccordeon />
       </Box>
     </Box>

@@ -20,8 +20,8 @@ const About = () => {
       <Box
         w="100%"
         p={[
-          "80px 20px 60px 20px",
-          "80px 20px 60px 20px",
+          "40px 10px 40px 10px",
+          "60px 20px 60px 20px",
           "80px 20px 80px 20px",
           "80px 20px 80px 20px",
           "80px 20px 80px 20px",
@@ -41,7 +41,7 @@ const About = () => {
         />
       </Box>
       <AboutMe />
-      <Box w="100%" pb="80px">
+      <Box w="100%" pb={["40px", "60px", "80px", "80px", "80px"]}>
         {SKILLS.map((item, index) => {
           return <Skills key={item.title} skills={item} />;
         })}

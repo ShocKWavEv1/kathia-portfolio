@@ -3,6 +3,7 @@ import { Box } from "@chakra-ui/react";
 import { useIsTouchDevice } from "@studio-freight/hamo";
 import { useEffect } from "react";
 import PageTitle from "../../components/pageTitle/pageTitle";
+import PortfolioGrid from "../../components/portfolioGrid/portfolioGrid";
 
 const Portfolio = () => {
   const isTouchableDevice = useIsTouchDevice();
@@ -14,10 +15,32 @@ const Portfolio = () => {
 
   return (
     <Box w="100%" bg="isabellina.500">
-      <Box w="100%" p="80px 20px" textAlign="center" bg="isabellina.500">
-        <PageTitle text="Portafolio" variant={["JUMBOSMPANGEAREGULAR"]} />
+      <Box
+        w="100%"
+        p={[
+          "40px 10px 40px 10px",
+          "60px 20px 60px 20px",
+          "80px 20px 80px 20px",
+          "80px 20px 80px 20px",
+          "80px 20px 80px 20px",
+        ]}
+        textAlign="center"
+        bg="isabellina.500"
+      >
+        <PageTitle
+          text="Portafolio"
+          variant={[
+            "JUMBOXXXSPANGEAREGULAR",
+            "JUMBOXXSPANGEAREGULAR",
+            "JUMBOXSPANGEAREGULAR",
+            "JUMBOXSPANGEAREGULAR",
+            "JUMBOSMPANGEAREGULAR",
+          ]}
+        />
       </Box>
-      <Box w="100%" h="100vh" bg="isabellina.500"></Box>
+      <Box w="100%" pb="80px">
+        <PortfolioGrid />
+      </Box>
     </Box>
   );
 };

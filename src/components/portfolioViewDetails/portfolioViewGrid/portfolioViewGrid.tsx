@@ -18,7 +18,7 @@ const PortfolioViewGrid: React.FC<PortfolioViewGridProps> = ({
     setFade(false);
     setTimeout(() => {
       setFade(true);
-    }, 450);
+    }, 1000);
   }, [router]);
 
   return (

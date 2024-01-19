@@ -144,7 +144,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                 Let’s work together! 🤘🏼
               </Text>
               <Box pt="20px">
-                <a href="/static/pdf/cv_kathia.pdf" download>
+                <a href="/static/pdf/cv_kath.pdf" download>
                   <Button variant="solid" size="sm" colorScheme="primary">
                     <Text variant="SMREGULAR">Descargar CV</Text>
                   </Button>

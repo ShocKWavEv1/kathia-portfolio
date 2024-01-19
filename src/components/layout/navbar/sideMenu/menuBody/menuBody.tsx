@@ -163,7 +163,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
           variant={["MDLIGHT", "LGLIGHT", "LGLIGHT", "LGLIGHT", "LGLIGHT"]}
           color="primary.500"
         >
-          ¡Hagamos algo increible juntos!
+          ¡Hagamos algo increíble juntos!
         </Text>
         <Box
           pt="20px"
@@ -174,7 +174,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
         >
           <a href={linkedinLink} target="_blank">
             <Button variant="outline" size="xs" colorScheme="primary">
-              <Text variant="SMREGULAR">Linkedin</Text>
+              <Text variant="SMREGULAR">Linkedln</Text>
             </Button>
           </a>
           <a href="/static/pdf/cv_kathia.pdf" download>

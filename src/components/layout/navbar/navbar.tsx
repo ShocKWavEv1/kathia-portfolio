@@ -128,26 +128,28 @@ const Navbar: React.FC<NavbarProps> = () => {
             _hover={hover}
             cursor={["auto", "auto", "auto", "auto", "pointer"]}
           >
-            <a
-              href="mailto:kathiaromero94@gmail.com"
-              style={{
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                placeItems: "center",
-                placeContent: "flex-end",
-              }}
-            >
-              <Text
-                display={["none", "none", "none", "none", "block"]}
-                as="span"
-                variant="XSMEDIUM"
-                pl="3px"
-                textTransform="uppercase"
+            <Box w="100%" display={["none", "none", "none", "none", "block"]}>
+              <a
+                href="mailto:kathiaromero94@gmail.com"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  placeItems: "center",
+                  placeContent: "flex-end",
+                }}
               >
-                Contactame
-              </Text>
-            </a>
+                <Text
+                  display={["none", "none", "none", "none", "block"]}
+                  as="span"
+                  variant="XSMEDIUM"
+                  pl="3px"
+                  textTransform="uppercase"
+                >
+                  Contactame
+                </Text>
+              </a>
+            </Box>
 
             <Box
               display={["flex", "flex", "flex", "flex", "none"]}

@@ -3,4 +3,5 @@ export interface TextMaskProps {
   variant: any;
   delay: number;
   color?: string;
+  triggerOnce?: boolean;
 }

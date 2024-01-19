@@ -1,21 +1,21 @@
 export const ROUTES = [
   {
-    path: "about",
+    path: "/about",
     label: "Sobre mí",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
-    path: "portfolio",
+    path: "/portfolio",
     label: "Portafolio",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
-    path: "workflow",
+    path: "/workflow",
     label: "Workflow",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
-    path: "resume",
+    path: "/resume",
     label: "Curriculum",
     styles: { borderRight: "none", borderRightColor: "primary.500" },
   },

@@ -26,7 +26,8 @@
     "src/pages/about/index.jsx",
     "src/pages/portfolio/index.jsx",
     "src/pages/resume/index.jsx",
-    "src/pages/workflow/index.jsx"
+    "src/pages/workflow/index.jsx",
+    "src/pages/portfolio/[portfolioId]/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

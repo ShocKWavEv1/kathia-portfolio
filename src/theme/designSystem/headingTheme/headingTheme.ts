@@ -86,7 +86,7 @@ const basePangeaH10Styles = {
 const jumboPangeaStyles = {
   fontFamily: PPPangea.style.fontFamily,
   fontSize: "260px",
-  lineHeight: "190px",
+  lineHeight: "210px",
 };
 
 const jumboMDPangeaStyles = {

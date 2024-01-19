@@ -8,6 +8,7 @@ const TextMask: React.FC<TextMaskProps> = ({
   variant,
   delay,
   color,
+  triggerOnce = true,
 }) => {
   const phrases = content;
   const animation = {
@@ -24,7 +25,7 @@ const TextMask: React.FC<TextMaskProps> = ({
 
   const { ref, inView, entry } = useInView({
     threshold: 0.75,
-    triggerOnce: true,
+    triggerOnce: triggerOnce,
   });
 
   return (

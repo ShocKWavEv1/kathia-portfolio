@@ -3,26 +3,32 @@ import {
   useContext,
   useEffect,
   useMemo,
-  useState,
   useRef,
   ReactNode,
 } from "react";
 import Lenis from "@studio-freight/lenis";
 import { useRouter } from "next/router";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const ScrollContext = createContext({
   lenis: null,
 });
 
 export const ScrollProvider = ({ children }: { children: ReactNode }) => {
-  const [lenis, setLenis] = useState<any>();
+  const lenis: any = useRef<Lenis | null>(null);
   const reqIdRef: any = useRef(null);
 
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    if (lenis.current) lenis.current!.scrollTo(0, { immediate: true });
+  }, [router, pathname, searchParams, lenis]);
 
   useEffect(() => {
     const animate = (time: any) => {
-      lenis?.raf(time);
+      lenis?.current.raf(time);
       reqIdRef.current = requestAnimationFrame(animate);
     };
     reqIdRef.current = requestAnimationFrame(animate);
@@ -30,7 +36,7 @@ export const ScrollProvider = ({ children }: { children: ReactNode }) => {
   }, [lenis]);
 
   useEffect(() => {
-    const lenis = new Lenis({
+    const lenisNew = new Lenis({
       duration: 2.4,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       direction: "vertical",
@@ -40,12 +46,12 @@ export const ScrollProvider = ({ children }: { children: ReactNode }) => {
       touchMultiplier: 2,
     });
 
-    setLenis(lenis);
+    lenis.current = lenisNew;
 
     return () => {
-      lenis.reset();
-      lenis.destroy();
-      setLenis(null);
+      lenis.current.reset();
+      lenis.current.destroy();
+      lenis.current = null;
     };
   }, []);
 

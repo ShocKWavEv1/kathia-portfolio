@@ -11,7 +11,6 @@ const About = () => {
   const isTouchableDevice = useIsTouchDevice();
 
   useEffect(() => {
-    window.scroll({ top: 0 });
     isTouchableDevice === false ? customCursor() : {};
   }, [isTouchableDevice]);
 

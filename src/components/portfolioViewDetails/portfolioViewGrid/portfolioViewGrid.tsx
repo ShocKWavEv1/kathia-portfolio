@@ -93,7 +93,7 @@ const PortfolioViewGrid: React.FC<PortfolioViewGridProps> = ({
               content={[portfolioDetails.next_project_title]}
               variant={[
                 "H7PANGEAREGULAR",
-                "H7PANGEAREGULAR",
+                "H6PANGEAREGULAR",
                 "H6PANGEAREGULAR",
                 "H6PANGEAREGULAR",
                 "H5PANGEAREGULAR",

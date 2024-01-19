@@ -144,9 +144,11 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                 Let’s work together! 🤘🏼
               </Text>
               <Box pt="20px">
-                <Button variant="solid" size="sm" colorScheme="primary">
-                  <Text variant="SMREGULAR">Descargar CV</Text>
-                </Button>
+                <a href="/static/pdf/cv_kathia.pdf" download>
+                  <Button variant="solid" size="sm" colorScheme="primary">
+                    <Text variant="SMREGULAR">Descargar CV</Text>
+                  </Button>
+                </a>
               </Box>
             </Box>
           </Fade>

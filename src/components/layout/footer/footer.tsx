@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterProps } from "./model";
 import { Box, Text } from "@chakra-ui/react";
-import { defaultStyles, hover } from "../navbar/constants";
+import { defaultStyles, hover, linkedinLink } from "../navbar/constants";
 import SlideY from " @/components/animations/slideY/slide";
 
 const Footer: React.FC<FooterProps> = () => {
@@ -38,6 +38,7 @@ const Footer: React.FC<FooterProps> = () => {
               2024 Kathia Romero
             </Text>
           </Box>
+
           <Box
             w="100%"
             h="100%"
@@ -46,38 +47,50 @@ const Footer: React.FC<FooterProps> = () => {
             placeContent="center"
             color="primary.500"
           >
-            <Box
-              w="50%"
-              h="100%"
-              bg="isabellina.500"
-              display="flex"
-              placeItems="center"
-              placeContent="center"
-              borderRight="1px"
-              borderRightColor="primary.500"
-              {...defaultStyles}
-              _hover={hover}
-              cursor="pointer"
+            <a
+              href={linkedinLink}
+              target="_blank"
+              style={{ width: "50%", height: "100%" }}
             >
-              <Text variant="XSREGULAR" textTransform="uppercase">
-                Linkedin
-              </Text>
-            </Box>
-            <Box
-              w="50%"
-              h="100%"
-              bg="isabellina.500"
-              display="flex"
-              placeItems="center"
-              placeContent="center"
-              {...defaultStyles}
-              _hover={hover}
-              cursor="pointer"
+              <Box
+                w="100%"
+                h="100%"
+                bg="isabellina.500"
+                display="flex"
+                placeItems="center"
+                placeContent="center"
+                borderRight="1px"
+                borderRightColor="primary.500"
+                {...defaultStyles}
+                _hover={hover}
+                cursor="pointer"
+              >
+                <Text variant="XSREGULAR" textTransform="uppercase">
+                  Linkedin
+                </Text>
+              </Box>
+            </a>
+            <a
+              href="/static/pdf/cv_kath.pdf"
+              download
+              style={{ width: "50%", height: "100%" }}
             >
-              <Text variant="XSREGULAR" textTransform="uppercase">
-                CV
-              </Text>
-            </Box>
+              <Box
+                w="100%"
+                h="100%"
+                bg="isabellina.500"
+                display="flex"
+                placeItems="center"
+                placeContent="center"
+                {...defaultStyles}
+                _hover={hover}
+                cursor="pointer"
+              >
+                <Text variant="XSREGULAR" textTransform="uppercase">
+                  CV
+                </Text>
+              </Box>
+            </a>
           </Box>
         </Box>
       </SlideY>

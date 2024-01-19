@@ -66,7 +66,33 @@ const Navbar: React.FC<NavbarProps> = () => {
             placeContent="center"
           >
             {ROUTES.map((item: any, i: number) => {
-              return (
+              return item.path === "/resume" ? (
+                <a
+                  href="/static/pdf/cv_kath.pdf"
+                  download
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <Box
+                    w="100%"
+                    h="100%"
+                    borderRight="1px"
+                    borderRightColor="primary.500"
+                    key={item.path}
+                    display="flex"
+                    placeContent="center"
+                    placeItems="center"
+                    color="primary.500"
+                    bg="isabellina.500"
+                    {...defaultStyles}
+                    _hover={hover}
+                    cursor="pointer"
+                  >
+                    <Text variant="XSREGULAR" textTransform="uppercase">
+                      {item.label}
+                    </Text>
+                  </Box>
+                </a>
+              ) : (
                 <Box
                   w="100%"
                   h="100%"
@@ -102,15 +128,27 @@ const Navbar: React.FC<NavbarProps> = () => {
             _hover={hover}
             cursor={["auto", "auto", "auto", "auto", "pointer"]}
           >
-            <Text
-              display={["none", "none", "none", "none", "block"]}
-              as="span"
-              variant="XSMEDIUM"
-              pl="3px"
-              textTransform="uppercase"
+            <a
+              href="mailto:kathiaromero94@gmail.com"
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                placeItems: "center",
+                placeContent: "flex-end",
+              }}
             >
-              Contactame
-            </Text>
+              <Text
+                display={["none", "none", "none", "none", "block"]}
+                as="span"
+                variant="XSMEDIUM"
+                pl="3px"
+                textTransform="uppercase"
+              >
+                Contactame
+              </Text>
+            </a>
+
             <Box
               display={["flex", "flex", "flex", "flex", "none"]}
               w="26px"

@@ -40,13 +40,14 @@ const PortfolioHeader: React.FC<PortfolioHeaderProps> = ({
         <TextMask
           content={[portfolioDetails.title]}
           variant={[
-            "JUMBOXXSPANGEAMEDIUM",
+            "JUMBOXXXSPANGEAMEDIUM",
             "JUMBOXXSPANGEAMEDIUM",
             "JUMBOXSPANGEAMEDIUM",
             "JUMBOXSPANGEAMEDIUM",
             "JUMBOXSPANGEAMEDIUM",
           ]}
           delay={0.4}
+          triggerOnce={false}
         />
       </Box>
       <Box w={["100%", "100%", "100%", "840px", "840px"]}>

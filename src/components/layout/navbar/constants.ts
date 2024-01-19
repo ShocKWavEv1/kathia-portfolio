@@ -43,3 +43,6 @@ export const hover: any = {
 export const defaultStyles = {
   transition: "background-color 0.25s ease-in-out, color 0.25s ease-in-out",
 };
+
+export const linkedinLink =
+  "https://www.linkedin.com/in/kathia-romero-4205a418b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app";

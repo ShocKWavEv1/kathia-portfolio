@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { MenuBodyProps } from "./model";
 import Image from "next/image";
 import TextMask from " @/components/animations/textMask/textMask";
-import { ROUTES } from "../../constants";
+import { ROUTES, linkedinLink } from "../../constants";
 import { blur, translate } from "./constants";
 
 const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
@@ -172,12 +172,16 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
           placeItems="center"
           placeContent="flex-start"
         >
-          <Button variant="outline" size="xs" colorScheme="primary">
-            <Text variant="SMREGULAR">Linkedin</Text>
-          </Button>
-          <Button ml="10px" variant="outline" size="xs" colorScheme="primary">
-            <Text variant="SMREGULAR">Descargar cv</Text>
-          </Button>
+          <a href={linkedinLink} target="_blank">
+            <Button variant="outline" size="xs" colorScheme="primary">
+              <Text variant="SMREGULAR">Linkedin</Text>
+            </Button>
+          </a>
+          <a href="/static/pdf/cv_kathia.pdf" download>
+            <Button ml="10px" variant="outline" size="xs" colorScheme="primary">
+              <Text variant="SMREGULAR">Descargar cv</Text>
+            </Button>
+          </a>
         </Box>
       </Box>
     </Box>

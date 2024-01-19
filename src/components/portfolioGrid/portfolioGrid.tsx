@@ -58,14 +58,26 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = () => {
                   >
                     <TextMask
                       content={[item.title]}
-                      variant="H6PANGEAREGULAR"
+                      variant={[
+                        "H7PANGEAREGULAR",
+                        "H6PANGEAREGULAR",
+                        "H6PANGEAREGULAR",
+                        "H6PANGEAREGULAR",
+                        "H6PANGEAREGULAR",
+                      ]}
                       color={item.card.color}
                       delay={0.75}
                     />
                     <Fade duration={0.75} delay={0.25}>
                       <Text
                         pt="10px"
-                        variant="XSREGULAR"
+                        variant={[
+                          "XSREGULAR",
+                          "XSREGULAR",
+                          "XSREGULAR",
+                          "XSREGULAR",
+                          "XSREGULAR",
+                        ]}
                         color={item.card.color}
                         textTransform="uppercase"
                       >

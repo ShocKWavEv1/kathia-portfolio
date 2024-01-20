@@ -32,7 +32,7 @@ export const SKILLS = [
         value: "2021 - 2021",
       },
       {
-        label: "Diplomado en fotografía - Edu Mac",
+        label: "Diplomado en Fotografía - Edu Mac",
         value: "2020 - 2020",
       },
       {
@@ -40,7 +40,7 @@ export const SKILLS = [
         value: "2019 - 2019",
       },
       {
-        label: "Diplomado en fotografía de producto - Amerike",
+        label: "Diplomado en Fotografía de producto - Amerike",
         value: "2018 - 2018",
       },
       {

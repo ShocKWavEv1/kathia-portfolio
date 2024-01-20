@@ -84,7 +84,7 @@ export const PORTFOLIO = [
         chillis_7,
       ],
       description:
-        "Creación de parrillas mensuales, conceptos de temporalidad, sport bar, shootings, pautas, naming de margarita del mes, creación de radios y campañas.",
+        "Creación de parrillas mensuales, conceptos de temporalidad, sport bar, shootings, pautas, naming de margarita del mes, radios para campañas.",
     },
   },
   {
@@ -133,7 +133,7 @@ export const PORTFOLIO = [
         starbucks_6,
       ],
       description:
-        "Creación de parrillas, conceptos de temporada, pautas, ideas creativas para Tiktok,  presentaciones, racionales y manifestos.",
+        "Creación de parrillas, conceptos de temporada, pautas, ideas creativas para TikTok,  presentaciones, racionales y manifestos.",
     },
   },
   {
@@ -150,7 +150,7 @@ export const PORTFOLIO = [
     details: {
       images: [roshfrans, roshfrans_2, roshfrans_4, roshfrans_5, roshfrans_6],
       description:
-        "Creación de parrillas, programación de contenido, responding en redes, presentaciones de KPI’s mensuales, creación de radios y copies.",
+        "Creación de parrillas, programación de contenido, responding en redes, presentaciones de KPI’s mensuales, creación de radios, conceptos creativos y copies.",
     },
   },
   {
@@ -175,7 +175,7 @@ export const PORTFOLIO = [
         trender_7,
       ],
       description:
-        "Fotografía, retoque, lanzamiento de producto, campañas de temporada, parrillas, programación de contenido, contenido para TikTok, responding de redes, reportes semanales de KPI’s.",
+        "Fotografía, retoque, lanzamiento de producto, campañas de temporada, parrillas, programación de contenido, contenido para TikTok, responding de redes y reportes semanales de KPI’s.",
     },
   },
 ];

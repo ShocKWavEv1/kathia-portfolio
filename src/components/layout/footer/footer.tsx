@@ -66,7 +66,7 @@ const Footer: React.FC<FooterProps> = () => {
                 cursor="pointer"
               >
                 <Text variant="XSREGULAR" textTransform="uppercase">
-                  Linkedln
+                  Linkedin
                 </Text>
               </Box>
             </a>

@@ -53,7 +53,13 @@ const Hero: React.FC<HeroProps> = () => {
     <Box
       w="100%"
       h="calc(100vh - 84px)"
-      minH="calc(100vh - 84px)"
+      minH={[
+        "100vh",
+        "100vh",
+        "calc(100vh - 84px)",
+        "calc(100vh - 84px)",
+        "calc(100vh - 84px)",
+      ]}
       bg="isabellina.500"
       display="flex"
       alignItems="center"

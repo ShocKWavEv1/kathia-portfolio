@@ -26,7 +26,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ setOpen }) => {
             h="100%"
             display="grid"
             gridTemplateColumns={[
-              "1fr 380px",
+              "1fr 350px",
               "1fr 420px",
               "1fr 500px",
               "1fr 500px",

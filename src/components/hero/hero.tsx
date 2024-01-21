@@ -53,6 +53,7 @@ const Hero: React.FC<HeroProps> = () => {
     <Box
       w="100%"
       h="calc(100vh - 84px)"
+      minH="calc(100vh - 84px)"
       bg="isabellina.500"
       display="flex"
       alignItems="center"
@@ -102,9 +103,15 @@ const Hero: React.FC<HeroProps> = () => {
         left={["5%", "5%", "10%", "10%", "10%"]}
         display={["block", "block", "block", "block", "block"]}
         className="rotating"
+        w={["100px", "120px", "120px", "120px", "120px"]}
       >
         <Fade delay={1.25} duration={0.45}>
-          <Image width={120} priority src={asterisk} alt="asterisk-1" />
+          <Image
+            priority
+            src={asterisk}
+            alt="asterisk-1"
+            style={{ width: "100%" }}
+          />
         </Fade>
       </Box>
       <Box
@@ -125,7 +132,7 @@ const Hero: React.FC<HeroProps> = () => {
         w={["180px", "220px", "220px", "220px", "220px"]}
         h={["260px", "300px", "300px", "300px", "300px"]}
         zIndex={2}
-        top="50%"
+        top={["58%", "58%", "50%", "50%", "50%"]}
         left="50%"
         transform="translate(-50%, -50%)"
       >

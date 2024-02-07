@@ -1,7 +1,7 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import { AboutMeProps } from "./model";
 import Image from "next/image";
-import kath from "../../../public/static/images/kath_og.jpeg";
+import kath from "../../../public/static/images/new_kath.jpeg";
 import Fade from "../animations/fade/fade";
 
 const AboutMe: React.FC<AboutMeProps> = () => {

@@ -98,7 +98,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
           w="100%"
           h="100%"
           display="flex"
-          alignItems="flex-end"
+          alignItems="center"
           justifyContent="flex-start"
         >
           <Fade delay={0.75} duration={1}>
@@ -117,8 +117,8 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                 "center",
                 "center",
                 "center",
-                "flex-end",
-                "flex-end",
+                "center",
+                "center",
               ]}
               flexDirection="column"
               ml={["0px", "0px", "0px", "25px", "25px"]}

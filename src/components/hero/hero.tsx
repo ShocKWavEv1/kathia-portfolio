@@ -54,8 +54,8 @@ const Hero: React.FC<HeroProps> = () => {
       w="100%"
       h="calc(100vh - 84px)"
       minH={[
-        "100vh",
-        "100vh",
+        "10svh",
+        "100svh",
         "calc(100vh - 84px)",
         "calc(100vh - 84px)",
         "calc(100vh - 84px)",

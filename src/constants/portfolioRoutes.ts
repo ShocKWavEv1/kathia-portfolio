@@ -1,3 +1,9 @@
+// netflix
+import nflx_1 from "../../public/static/images/portfolio/netflix/1.png";
+import nflx_2 from "../../public/static/images/portfolio/netflix/2.png";
+import nflx_3 from "../../public/static/images/portfolio/netflix/3.png";
+import nflx_4 from "../../public/static/images/portfolio/netflix/4.jpg";
+import nflx_5 from "../../public/static/images/portfolio/netflix/5.jpg";
 // BLACK & WHITE
 import bw from "../../public/static/images/portfolio/bw/main.jpeg";
 import bw_2 from "../../public/static/images/portfolio/bw/2.jpeg";
@@ -45,6 +51,23 @@ import trender_6 from "../../public/static/images/portfolio/trender/6.jpeg";
 import trender_7 from "../../public/static/images/portfolio/trender/7.jpeg";
 
 export const PORTFOLIO = [
+  {
+    title: "Netflix",
+    slug: "netflix",
+    next_project: "black-&-white",
+    next_project_title: "Black & White",
+    card: {
+      subtitle: "[ creación de campaña 360 ]",
+      image_main: bw,
+      bg: "secondary.900",
+      color: "alabaster.500",
+    },
+    details: {
+      images: [nflx_5, nflx_2, nflx_4, nflx_3, nflx_1],
+      description:
+        "Realice las cabezas, creatividad para activaciones, presentación, racionales, ideas para TopViews en TikTok, happenings en la premier y desarrollo de etapas para la película.",
+    },
+  },
   {
     title: "Black & White",
     slug: "black-&-white",

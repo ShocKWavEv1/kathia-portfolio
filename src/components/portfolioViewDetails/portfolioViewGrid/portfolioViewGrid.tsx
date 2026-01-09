@@ -115,7 +115,7 @@ const PortfolioViewGrid: React.FC<PortfolioViewGridProps> = ({
                 color={portfolioDetails.card.color}
                 textTransform="uppercase"
               >
-                {`[ Siguiente proyecto ]`}
+                {`[ NEXT PROJECT ]`}
               </Text>
             </Fade>
           </Box>

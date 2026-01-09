@@ -1,7 +1,7 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import { AboutMeProps } from "./model";
 import Image from "next/image";
-import kath from "../../../public/static/images/new_kath.jpeg";
+import kath from "../../../public/static/images/kath_profile.jpg";
 import Fade from "../animations/fade/fade";
 
 const AboutMe: React.FC<AboutMeProps> = () => {
@@ -52,6 +52,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                     style={{
                       width: "100%",
                       height: "100%",
+                      filter: "grayscale(100%)",
                     }}
                   />
                 </Box>
@@ -125,20 +126,21 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               p={["30px", "30px", "30px", "0px", "0px"]}
             >
               <Text variant="MDREGULAR" color="primary.500">
-                Me gusta generar ideas punk para el mundo de la creatividad.
-                Desde pequeña me gusta crear, ser apasionada y un poco
-                perfeccionista.
+                I love creating punk ideas for the creative world. Since I was a
+                kid, I’ve enjoyed creating, being passionate, and a bit of a
+                perfectionist.
               </Text>
               <Text pt="10px" variant="MDREGULAR" color="primary.500">
-                Tengo experiencia en crear conceptos para campañas de
-                temporalidades, parrillas, peloteos para pitches, lines, radios,
-                reportes de KPI&apos;S, redacción para blogs, edición de video,
-                retoque fotográfico, racionales, manifestos y parte de
-                estrategía digital.
+                My specialty is digital media and 360° campaigns. I have
+                experience developing concepts for seasonal campaigns, content
+                calendars, pitch brainstorming, taglines, radio scripts, KPI
+                reports, blog writing, video editing, photo retouching,
+                rationales, manifestos, and digital strategy.
               </Text>
               <Text pt="10px" variant="MDREGULAR" color="primary.500">
-                Soy muy chill, workaholic, sincera, directa y responsable. Le
-                entro a los peloteos y al desmadre creativo.
+                I’m very chill, a bit of a workaholic, honest, straightforward,
+                and responsible. I’m always down for brainstorming sessions and
+                creative chaos.
               </Text>
               <Text pt="10px" variant="MDREGULAR" color="primary.500">
                 Let’s work together! 🤘🏼
@@ -146,7 +148,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               <Box pt="20px">
                 <a href="/static/pdf/cv_kath.pdf" download>
                   <Button variant="solid" size="sm" colorScheme="primary">
-                    <Text variant="SMREGULAR">Descargar CV</Text>
+                    <Text variant="SMREGULAR">Download CV</Text>
                   </Button>
                 </a>
               </Box>

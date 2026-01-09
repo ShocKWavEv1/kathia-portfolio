@@ -1,17 +1,17 @@
 export const ROUTES = [
   {
     path: "/",
-    label: "Inicio",
+    label: "Home",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
     path: "/about",
-    label: "Sobre mí",
+    label: "About me",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
     path: "/portfolio",
-    label: "Portafolio",
+    label: "Projects",
     styles: { borderRight: "1px", borderRightColor: "primary.500" },
   },
   {
@@ -21,7 +21,7 @@ export const ROUTES = [
   },
   {
     path: "/resume",
-    label: "Currículum",
+    label: "Resume",
     styles: { borderRight: "none", borderRightColor: "primary.500" },
   },
 ];

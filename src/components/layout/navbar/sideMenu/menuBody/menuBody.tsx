@@ -175,7 +175,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
             variant={["MDLIGHT", "LGLIGHT", "LGLIGHT", "LGLIGHT", "LGLIGHT"]}
             color="primary.500"
           >
-            ¡Hagamos algo increíble juntos!
+            Let’s work together! 🤘🏼
           </Text>
           <Box
             pt="20px"
@@ -196,7 +196,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
                 size="xs"
                 colorScheme="primary"
               >
-                <Text variant="SMREGULAR">Descargar cv</Text>
+                <Text variant="SMREGULAR">Download CV</Text>
               </Button>
             </a>
           </Box>

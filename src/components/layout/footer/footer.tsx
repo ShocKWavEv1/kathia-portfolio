@@ -5,6 +5,7 @@ import { defaultStyles, hover, linkedinLink } from "../navbar/constants";
 import SlideY from " @/components/animations/slideY/slide";
 
 const Footer: React.FC<FooterProps> = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <Box w="100%" bg="isabellina.500">
       <SlideY direction={180} delay={1} duration={2}>
@@ -35,7 +36,7 @@ const Footer: React.FC<FooterProps> = () => {
             color="primary.500"
           >
             <Text as="span" variant="XSREGULAR" textTransform="uppercase">
-              2024 Kathia Romero
+              {currentYear} Kathia Romero
             </Text>
           </Box>
 

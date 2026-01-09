@@ -27,7 +27,7 @@ const Portfolio = () => {
         bg="isabellina.500"
       >
         <PageTitle
-          text="Portafolio"
+          text="Selected Projects"
           variant={[
             "JUMBOXXXSPANGEAREGULAR",
             "JUMBOXXSPANGEAREGULAR",

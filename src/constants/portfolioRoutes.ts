@@ -57,7 +57,7 @@ export const PORTFOLIO = [
     next_project: "black-&-white",
     next_project_title: "Black & White",
     card: {
-      subtitle: "[ creación de campaña 360 ]",
+      subtitle: "[ 360 campaign creation ]",
       image_main: bw,
       bg: "secondary.900",
       color: "alabaster.500",
@@ -65,7 +65,7 @@ export const PORTFOLIO = [
     details: {
       images: [nflx_5, nflx_2, nflx_4, nflx_3, nflx_1],
       description:
-        "Realice las cabezas, creatividad para activaciones, presentación, racionales, ideas para TopViews en TikTok, happenings en la premier y desarrollo de etapas para la película.",
+        "Project for a Jennifer Lopez film on Netflix. I developed key visuals, activation concepts, presentations, rationales, ideas for TikTok TopViews, premiere happenings, and multi-phase campaign development.",
     },
   },
   {
@@ -74,7 +74,7 @@ export const PORTFOLIO = [
     next_project: "chillis",
     next_project_title: "Chillis",
     card: {
-      subtitle: "[ creación de contenidos digitales ]",
+      subtitle: "[ digital content creation ]",
       image_main: bw,
       bg: "primary.900",
       color: "isabellina.500",
@@ -82,7 +82,7 @@ export const PORTFOLIO = [
     details: {
       images: [bw, bw_2, bw_3, bw_4, bw_6, bw_7, bw_5],
       description:
-        "Creación de parrillas, estrategias anuales, planes de trabajo, shootings, temporalidades y elaboración de conceptos.",
+        "Content calendars, annual strategies, work plans, shootings, seasonal campaigns, and concept development.",
     },
   },
   {
@@ -91,7 +91,7 @@ export const PORTFOLIO = [
     next_project: "cielito-querido-cafe",
     next_project_title: "Cielito Querido Café",
     card: {
-      subtitle: "[ creación de contenidos digitales ]",
+      subtitle: "[ digital content creation ]",
       image_main: chillis,
       bg: "primary.500",
       color: "isabellina.500",
@@ -107,7 +107,7 @@ export const PORTFOLIO = [
         chillis_7,
       ],
       description:
-        "Creación de parrillas mensuales, conceptos de temporalidad, sport bar, shootings, pautas, naming de margarita del mes, radios para campañas.",
+        "Monthly content calendars, seasonal concepts, sports bar content, shootings, paid media, naming for “Margarita of the Month,” radio scripts, and campaign development.",
     },
   },
   {
@@ -116,7 +116,7 @@ export const PORTFOLIO = [
     next_project_title: "Starbucks",
     next_project: "starbucks",
     card: {
-      subtitle: "[ creación de contenidos digitales ]",
+      subtitle: "[ digital content creation ]",
       image_main: cielito,
       bg: "secondary.500",
       color: "primary.900",
@@ -132,7 +132,7 @@ export const PORTFOLIO = [
         cielito_7,
       ],
       description:
-        "Fotografía, retoque digital, parrillas mensuales, copies, programación de contenido, conceptos, presentaciones, racionales, manifestos y reportes de KPI’s.",
+        "Photography, digital retouching, monthly content calendars, copywriting, content scheduling, concepts, presentations, rationales, manifestos, and KPI reports.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const PORTFOLIO = [
     next_project: "roshfrans",
     next_project_title: "Roshfrans",
     card: {
-      subtitle: "[ creación de contenidos digitales ]",
+      subtitle: "[ digital content creation ]",
       image_main: starbucks,
       bg: "noir.500",
       color: "isabellina.500",
@@ -156,7 +156,7 @@ export const PORTFOLIO = [
         starbucks_6,
       ],
       description:
-        "Creación de parrillas, conceptos de temporada, pautas, ideas creativas para TikTok,  presentaciones, racionales y manifestos.",
+        "Content calendars, seasonal concepts, paid media, creative ideas for TikTok, presentations, rationales, and manifestos.",
     },
   },
   {
@@ -165,7 +165,7 @@ export const PORTFOLIO = [
     next_project: "trender",
     next_project_title: "Trender",
     card: {
-      subtitle: "[ creación de contenidos digitales ]",
+      subtitle: "[ digital content creation ]",
       image_main: roshfrans,
       bg: "marian.500",
       color: "isabellina.500",
@@ -173,7 +173,7 @@ export const PORTFOLIO = [
     details: {
       images: [roshfrans, roshfrans_2, roshfrans_4, roshfrans_5, roshfrans_6],
       description:
-        "Creación de parrillas, programación de contenido, responding en redes, presentaciones de KPI’s mensuales, creación de radios, conceptos creativos y copies.",
+        "Content calendars, content scheduling, social media responding, monthly KPI presentations, radio scripts, and copywriting.",
     },
   },
   {
@@ -182,7 +182,7 @@ export const PORTFOLIO = [
     next_project: "black-&-white",
     next_project_title: "Black & White",
     card: {
-      subtitle: "[ creación de contenidos digitales ]",
+      subtitle: "[ digital content creation ]",
       image_main: trender,
       bg: "alabaster.500",
       color: "primary.900",
@@ -198,7 +198,7 @@ export const PORTFOLIO = [
         trender_7,
       ],
       description:
-        "Fotografía, retoque, lanzamiento de producto, campañas de temporada, parrillas, programación de contenido, contenido para TikTok, responding de redes y reportes semanales de KPI’s.",
+        "Photography, retouching, product launches, seasonal campaigns, content calendars, scheduling, TikTok content, social media responding, and weekly KPI reports.",
     },
   },
 ];

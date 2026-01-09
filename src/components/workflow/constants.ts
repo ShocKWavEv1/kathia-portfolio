@@ -1,74 +1,72 @@
 export const WORKFLOW = [
   {
-    title: "Investigación y Comprensión",
+    title: "Research & Understanding",
     items: [
       {
-        description: "Investigar sobre la cuenta y su audiencia.",
+        description: "Research the brand and its audience.",
       },
       {
-        description: "Comprender el look & feel y objetivos de la marca.",
+        description: "Understand the brand's look & feel and objectives.",
       },
     ],
   },
   {
-    title: "Definición del Objetivo",
+    title: "Goal Definition",
     items: [
       {
-        description: "Establecer el propósito del contenido.",
+        description: "Define the purpose of the content.",
       },
     ],
   },
   {
-    title: "Análisis de la Competencia",
+    title: "Competitor Analysis",
+    items: [
+      {
+        description: "Research competitors and analyze their content.",
+      },
+    ],
+  },
+  {
+    title: "Concept Development",
     items: [
       {
         description:
-          "Hacer una investigación de la competencia y estudiar su contenido.",
+          "Create a value proposition aligned with seasonal needs and client specifications.",
       },
     ],
   },
   {
-    title: "Desarrollo del concepto",
+    title: "Content Creation",
     items: [
       {
         description:
-          "Crea una propuesta de valor que cumpla con las necesidades de la temporalidad y specs del cliente.",
+          "Develop content based on brand seasonality and the previously defined annual strategy.",
       },
     ],
   },
   {
-    title: "Creación del Contenido",
+    title: "SEO Optimization (for paid media)",
     items: [
       {
         description:
-          "Utilizar las temporalidades adecuadas de la marca y bajar contenido dependiendo de la estrategia anual previa.",
+          "Include relevant keywords to improve visibility in search engines.",
       },
     ],
   },
   {
-    title: "Optimización SEO (pauta)",
+    title: "Client Feedback",
     items: [
       {
-        description:
-          "Incluir palabras clave relevantes para mejorar la visibilidad en los motores de búsqueda.",
+        description: "Follow up and adjust content based on client feedback.",
       },
     ],
   },
   {
-    title: "Feedback de cliente",
+    title: "Trends",
     items: [
       {
         description:
-          "Hacer un seguimiento y modificación con los ajustes del cliente.",
-      },
-    ],
-  },
-  {
-    title: "Tendencias",
-    items: [
-      {
-        description:
-          "Permanecer actualizada con las tendencias  y generar contenido para la marca.",
+          "Stay updated on trends and generate relevant content for the brand.",
       },
     ],
   },

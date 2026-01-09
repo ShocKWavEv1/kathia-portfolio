@@ -3,7 +3,7 @@ import { HeroProps } from "./model";
 import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
-import kath from "../../../public/static/images/new_kath.jpeg";
+import kath from "../../../public/static/images/kath_profile.jpg";
 import asterisk from "../../../public/static/svg/asterisk.svg";
 import TextMask from "../animations/textMask/textMask";
 import SlideY from "../animations/slideY/slide";
@@ -151,6 +151,7 @@ const Hero: React.FC<HeroProps> = () => {
             fill={true}
             style={{
               objectFit: "cover",
+              filter: "grayscale(100%)",
             }}
           />
         </Fade>

@@ -1,56 +1,38 @@
+const getAge = (birthYear: number, birthMonth: number) => {
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth() + 1; // getMonth() is 0-indexed
+  const age =
+    currentMonth >= birthMonth
+      ? currentYear - birthYear
+      : currentYear - birthYear - 1;
+  return `${age} years old`;
+};
+
 export const SKILLS = [
   {
-    title: "Información Personal",
+    title: "Personal Information",
     skills: [
       {
-        label: "Nombre",
+        label: "Name",
         value: "Kathia Romero Paredes Castillo",
       },
       {
-        label: "Edad",
-        value: "29 años",
+        label: "Age",
+        value: getAge(1994, 11),
       },
       {
-        label: "Ubicación",
-        value: "México, Ciudad de México",
+        label: "Location",
+        value: "Mexico, CDMX",
       },
       {
-        label: "Idiomas",
-        value: "Español nativo / Inglés avanzado",
+        label: "Languages",
+        value: "Spanish native / Advanced English",
       },
     ],
   },
   {
-    title: "Estudios",
-    skills: [
-      {
-        label: "Diplomado de After Effects - Edu Mac",
-        value: "2022 - 2022",
-      },
-      {
-        label: "Diplomado de Edición de video - Edu Mac",
-        value: "2021 - 2021",
-      },
-      {
-        label: "Diplomado en Fotografía - Edu Mac",
-        value: "2020 - 2020",
-      },
-      {
-        label: "Diplomado en Diseño Gráfico - Edu Mac",
-        value: "2019 - 2019",
-      },
-      {
-        label: "Diplomado en Fotografía de producto - Amerike",
-        value: "2018 - 2018",
-      },
-      {
-        label: "Licenciatura en Publicidad - Amerike",
-        value: "2014 - 2017",
-      },
-    ],
-  },
-  {
-    title: "Experiencia",
+    title: "Work Experience",
     skills: [
       {
         label: "Pico Love",
@@ -72,41 +54,70 @@ export const SKILLS = [
         label: "BBDO",
         value: "2017 - 2018",
       },
+      {
+        label: "Government of Mexico City",
+        value: "2014 - 2017",
+      },
     ],
   },
   {
-    title: "Habilidades",
+    title: "Experience",
     skills: [
       {
-        label: "Conceptos creativos",
+        label: "Creative concepts",
         value: "",
       },
       {
-        label: "Peloteo de ideas",
+        label: "Idea brainstorming",
         value: "",
       },
       {
-        label: "Planeación de shootings",
+        label: "Content calendars",
         value: "",
       },
       {
-        label: "Dirección de shootings",
+        label: "Shooting planning",
         value: "",
       },
       {
-        label: "Creación de estrategias digitales",
+        label: "Shooting direction",
         value: "",
       },
       {
-        label: "Dirección creativa",
+        label: "Photography",
         value: "",
       },
       {
-        label: "Redacción de lines",
+        label: "Photo correction",
         value: "",
       },
       {
-        label: "Liderazgo en proyectos creativos",
+        label: "Digital strategy creation",
+        value: "",
+      },
+      {
+        label: "Creative direction",
+        value: "",
+      },
+      {
+        label: "Tagline writing",
+        value: "",
+      },
+      {
+        label: "Leadership in creative projects",
+        value: "",
+      },
+      {
+        label: "Paid media campaigns",
+        value: "",
+      },
+    ],
+  },
+  {
+    title: "Skills",
+    skills: [
+      {
+        label: "Leadership",
         value: "",
       },
       {
@@ -114,8 +125,45 @@ export const SKILLS = [
         value: "",
       },
       {
-        label: "Conceptualización",
+        label: "Conceptual thinking",
         value: "",
+      },
+      {
+        label: "Digital content",
+        value: "",
+      },
+      {
+        label: "Creative direction",
+        value: "",
+      },
+    ],
+  },
+  {
+    title: "Education",
+    skills: [
+      {
+        label: "Diploma in After Effects - Edu Mac",
+        value: "2022 - 2022",
+      },
+      {
+        label: "Diploma in Video Editing - Edu Mac",
+        value: "2021 - 2021",
+      },
+      {
+        label: "Diploma in Photography - Edu Mac",
+        value: "2020 - 2020",
+      },
+      {
+        label: "Diploma in Graphic Design - Edu Mac",
+        value: "2019 - 2019",
+      },
+      {
+        label: "Diploma in Product Photography - Amerike",
+        value: "2018 - 2018",
+      },
+      {
+        label: "Bachelor’s Degree in Advertising - Amerike",
+        value: "2014 - 2017",
       },
     ],
   },

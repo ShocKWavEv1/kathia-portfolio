@@ -24,7 +24,7 @@ const PortfolioHeader: React.FC<PortfolioHeaderProps> = ({
         onClick={() => router.push("/portfolio")}
       >
         <Text variant="MDREGULAR" color="primary.500">
-          ←&nbsp;&nbsp;&nbsp;Regresar
+          ←&nbsp;&nbsp;&nbsp;Go back
         </Text>
       </Box>
       <Box

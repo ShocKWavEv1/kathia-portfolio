@@ -29,7 +29,7 @@ const About = () => {
         bg="isabellina.500"
       >
         <PageTitle
-          text="Sobre mí"
+          text="About Me"
           variant={[
             "JUMBOXXXSPANGEAREGULAR",
             "JUMBOXXSPANGEAREGULAR",

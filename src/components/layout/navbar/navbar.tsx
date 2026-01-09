@@ -146,7 +146,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                   pl="3px"
                   textTransform="uppercase"
                 >
-                  Contactame
+                  Contact me
                 </Text>
               </a>
             </Box>

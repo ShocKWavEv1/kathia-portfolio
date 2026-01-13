@@ -9,6 +9,7 @@ import theme from " @/theme/theme";
 import Layout from " @/components/layout/layout";
 import Cursor from " @/components/cursor/cursor";
 import { useIsTouchDevice } from "@studio-freight/hamo";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function App({ Component, pageProps }) {
   const LoadingBarRef = useRef(null);
@@ -61,6 +62,7 @@ export default function App({ Component, pageProps }) {
       />
       {!isTouchableDevice ? <Cursor /> : null}
       <LoadingBar ref={LoadingBarRef} height={3} color="#2a6112" />
+      <Analytics />
       <ScrollProvider>
         <Layout>
           <Component {...pageProps} />
